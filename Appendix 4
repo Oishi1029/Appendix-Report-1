@@ -1,9 +1,9 @@
 void loop() {
-	// Get new sensor events with the readings
+	// Obtain sensor events with the readings
 	sensors_event_t a, g;
 	mpu.getEvent(&a, &g);
 
-	// Print out the values 
+	// Print out acceleration values in X, Y and Z directions
 	Serial.print("Acceleration X: ");
 	Serial.print(a.acceleration.x);
 	Serial.print(", Y: ");
@@ -12,6 +12,7 @@ void loop() {
 	Serial.print(a.acceleration.z);
 	Serial.println(" m/s^2");
 
+	// Print out rotation values in X, Y and Z directions
 	Serial.print("Rotation X: ");
 	Serial.print(g.gyro.x);
 	Serial.print(", Y: ");
