@@ -1,13 +1,15 @@
 void setup(){ 
-    pinMode(R_S, INPUT); 
-    pinMode(L_S, INPUT); 
-    pinMode(enA, OUTPUT); 
-    pinMode(in1, OUTPUT); 
-    pinMode(in2, OUTPUT); 
-    pinMode(in3, OUTPUT); 
-    pinMode(in4, OUTPUT); 
-    pinMode(enB, OUTPUT);
-    digitalWrite(enA, HIGH); 
-    digitalWrite(enB, HIGH); 
+    pinMode(R_Sensor, INPUT); 
+    pinMode(L_Sensor, INPUT); 
+
+    pinMode(EN_A, OUTPUT); 
+    pinMode(EN_B, OUTPUT);
+
+    pinMode(IN1, OUTPUT); 
+    pinMode(IN2, OUTPUT); 
+    
+    digitalWrite(EN_A, HIGH); 
+    digitalWrite(EN_B, HIGH); 
+
     delay(1000);
 }
