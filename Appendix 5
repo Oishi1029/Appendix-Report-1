@@ -1,0 +1,8 @@
+#define enA 5 //Enable1 Pin 
+#define in1 6 //Motor1A  Pin 
+#define in2 7 //Motor1B  Pin 
+#define in3 9 //Motor2A  Pin
+#define in4 10 //Motor2B Pin
+#define enB 8 //Enable2 Pin
+#define R_S 4 // Right Sensor
+#define L_S 2 // Left Sensor
