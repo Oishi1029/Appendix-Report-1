@@ -1,10 +1,13 @@
 void loop(){  
     //Left - white | Right - white
-    if((digitalRead(L_S) == 0)&&(digitalRead(R_S) == 0)){forward();} 
+    if((digitalRead(L_Sensor) == 0)&&(digitalRead(R_Sensor) == 0)) forward(); 
+
     //Left - white | Right - black
-    if((digitalRead(L_S) == 0)&&(digitalRead(R_S) == 1)){turnRight();}
+    if((digitalRead(L_Sensor) == 0)&&(digitalRead(R_Sensor) == 1)) turnRight();
+
     //Left - black | Right - white 
-    if((digitalRead(L_S) == 1)&&(digitalRead(R_S) == 0)){turnLeft();}  
+    if((digitalRead(L_Sensor) == 1)&&(digitalRead(R_Sensor) == 0)) turnLeft();
+
     //Left - black | Right - black
-    if((digitalRead(L_S) == 1)&&(digitalRead(R_S) == 1)){Stop();}      
+    if((digitalRead(L_Sensor) == 1)&&(digitalRead(R_Sensor) == 1)) Stop();    
 }
