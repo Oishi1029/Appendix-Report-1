@@ -1,0 +1,10 @@
+void loop(){  
+    //Left - white | Right - white
+    if((digitalRead(L_S) == 0)&&(digitalRead(R_S) == 0)){forward();} 
+    //Left - white | Right - black
+    if((digitalRead(L_S) == 0)&&(digitalRead(R_S) == 1)){turnRight();}
+    //Left - black | Right - white 
+    if((digitalRead(L_S) == 1)&&(digitalRead(R_S) == 0)){turnLeft();}  
+    //Left - black | Right - black
+    if((digitalRead(L_S) == 1)&&(digitalRead(R_S) == 1)){Stop();}      
+}
