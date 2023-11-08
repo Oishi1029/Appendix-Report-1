@@ -13,7 +13,7 @@ void turnLeft(){ //turnLeft
     digitalWrite(IN2, LOW);  //Left Motor STOP
 }
 
-void Stop(){ //stop
-    digitalWrite(in1, LOW); //Right Motor STOP
-    digitalWrite(in4, LOW); //Left Motor STOP
+void Stop(){ //Stop
+    digitalWrite(IN1, LOW); //Right Motor STOP
+    digitalWrite(IN2, LOW); //Left Motor STOP
 }
